@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.services;
 
+/**
+ * Service for managing bookings.
+ * Handles booking creation, update, deletion, and retrieval.
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

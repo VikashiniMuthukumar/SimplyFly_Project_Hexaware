@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * Registration request payload for user signup.
+ * Contains email, password, and role fields with validation.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Email;
 

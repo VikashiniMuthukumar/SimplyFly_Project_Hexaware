@@ -18,6 +18,12 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 
+/**
+ * Entity representing a Booking made by a User on a Route.
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 @Entity
 public class Booking {
 

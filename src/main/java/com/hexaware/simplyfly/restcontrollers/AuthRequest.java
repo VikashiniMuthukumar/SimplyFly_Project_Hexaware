@@ -1,5 +1,11 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * DTO for user login request containing username and password.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
 import jakarta.validation.constraints.NotBlank;
 
 public record AuthRequest(

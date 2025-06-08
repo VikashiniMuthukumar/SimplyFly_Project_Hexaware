@@ -3,6 +3,11 @@ package com.hexaware.simplyfly.dto;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
+/**
+ * AdminDTO carries admin details with validation.
+ * @author Vikashini
+ * @version 1.0
+ */
 public class AdminDTO {
     private Long admin_id;
 

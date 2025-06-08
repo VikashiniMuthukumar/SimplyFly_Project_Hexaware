@@ -10,6 +10,12 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 
+/**
+ * RouteDTO carries route details with validation.
+ * @author Vikashini
+ * @version 1.0
+ */
+
 public class RouteDTO {
 
     private Long route_id;

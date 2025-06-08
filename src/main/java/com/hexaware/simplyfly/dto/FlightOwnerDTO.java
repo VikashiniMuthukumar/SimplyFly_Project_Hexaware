@@ -6,6 +6,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.validation.constraints.NotNull;
 
+
+/**
+ * FlightOwnerDTO carries flight owner details with validation.
+ * @author Vikashini
+ * @version 1.0
+ */
+
 public class FlightOwnerDTO {
 
     private Long owner_id;

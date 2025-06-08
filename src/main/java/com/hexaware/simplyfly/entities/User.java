@@ -22,6 +22,14 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
+/**
+ * Entity representing a user with details like name, email, role, and relationships to admin,
+ * flight owner, and bookings.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 @Entity
 @Table(name = "users")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "user_id")

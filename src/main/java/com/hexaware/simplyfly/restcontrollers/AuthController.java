@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * REST controller for user authentication and registration.
+ * Handles JWT token creation and user registration.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import com.hexaware.simplyfly.entities.User;
 import com.hexaware.simplyfly.enums.UserRole;
 import com.hexaware.simplyfly.security.JwtUtil;

@@ -9,6 +9,12 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
+/**
+ * FlightDTO carries flight details with validation.
+ * @author Vikashini
+ * @version 1.0
+ */
+
 public class FlightDTO {
 
     private Long flight_id;

@@ -18,6 +18,13 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
+/**
+ * Entity representing a flight route with origin, destination, schedule, fare, and bookings.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 @Entity
 public class Route {
 	@Id

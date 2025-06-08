@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.repositories;
 
+/**
+ * Repository interface for the Flight entity.
+ * Provides built-in CRUD methods and custom update operations.
+ *
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

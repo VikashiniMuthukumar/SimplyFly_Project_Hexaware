@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * REST controller for managing Flight entities.
+ * Supports CRUD operations for flights.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

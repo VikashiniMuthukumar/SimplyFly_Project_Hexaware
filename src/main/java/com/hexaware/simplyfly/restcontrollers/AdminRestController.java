@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * REST controller for Admin, User, and Flight management.
+ * Handles CRUD operations via IAdminService.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

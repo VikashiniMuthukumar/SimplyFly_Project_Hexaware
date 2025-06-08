@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.security;
 
+/**
+ * Service to load user details for authentication.
+ * Checks user existence and saves users.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import com.hexaware.simplyfly.entities.User;
 import com.hexaware.simplyfly.enums.UserRole;
 import com.hexaware.simplyfly.repositories.UserRepository;

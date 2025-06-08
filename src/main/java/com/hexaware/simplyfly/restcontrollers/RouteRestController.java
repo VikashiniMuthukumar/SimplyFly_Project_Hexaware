@@ -1,5 +1,15 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * REST controller for managing Route entities.
+ * Provides endpoints to create, update, delete, and fetch routes.
+ * Uses IRouteService for business logic.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

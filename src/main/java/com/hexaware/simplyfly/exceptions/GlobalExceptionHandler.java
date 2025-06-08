@@ -4,6 +4,16 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * Global exception handler to manage and respond to application-wide exceptions.
+ * 
+ * It captures various custom and generic exceptions, returning meaningful HTTP
+ * responses to the client.
+ * 
+ * Author: Vikashini  
+ * Version: 1.0
+ */
+
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 

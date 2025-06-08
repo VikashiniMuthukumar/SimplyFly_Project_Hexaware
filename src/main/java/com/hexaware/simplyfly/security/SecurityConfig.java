@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.security;
 
+/**
+ * SecurityConfig configures Spring Security with JWT and role-based access.
+ * Defines public endpoints, role-based API access, and stateless session.
+ * @author Vikashini
+ * @version 1.0
+ */
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,54 +32,13 @@ public class SecurityConfig {
     @Autowired
     private JwtRequestFilter jwtRequestFilter;
 
-	/*
-	 * @Bean public SecurityFilterChain securityFilterChain(HttpSecurity http)
-	 * throws Exception { http.csrf(csrf -> csrf.disable())
-	 * .authorizeHttpRequests(auth -> auth
-	 * .requestMatchers(HttpMethod.POST,"/api/user").permitAll() .requestMatchers(
-	 * "/api/users/register", "/api/users/login", "/v3/api-docs/**",
-	 * "/swagger-ui/**", "/swagger-ui.html", "/register", "/authenticate"
-	 * ).permitAll() .requestMatchers("/authenticate").permitAll()
-	 * .requestMatchers("/api/users/**").hasAnyRole("ADMIN", "FLIGHT_OWNER","USER")
-	 * .requestMatchers("/api/flights/**").hasRole("FLIGHT_OWNER")
-	 * .requestMatchers("/api/bookings/**").hasRole("USER")
-	 * .requestMatchers("/api/admin/**").hasRole("ADMIN")
-	 * .anyRequest().authenticated() ) .sessionManagement(session -> session
-	 * .sessionCreationPolicy(SessionCreationPolicy.STATELESS) );
-	 * 
-	 * http.addFilterBefore(jwtRequestFilter,
-	 * UsernamePasswordAuthenticationFilter.class); return http.build(); }
-	 */
+	
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(csrf -> csrf.disable()) // Disable CSRF for stateless APIs
+            .csrf(csrf -> csrf.disable()) 
 
-				/*
-				 * .authorizeHttpRequests(auth -> auth // Public endpoints - open to all
-				 * .requestMatchers( "/register", "/authenticate", "/v3/api-docs/**",
-				 * "/swagger-ui/**", "/swagger-ui.html" ).permitAll()
-				 * 
-				 * // ADMIN can create users and routes (POST) .requestMatchers(HttpMethod.POST,
-				 * "/api/users").hasRole("ADMIN") .requestMatchers(HttpMethod.POST,
-				 * "/api/routes").hasRole("ADMIN")
-				 * 
-				 * // FLIGHT_OWNER can manage flights (POST, PUT)
-				 * .requestMatchers(HttpMethod.POST, "/api/flights").hasRole("FLIGHT_OWNER")
-				 * .requestMatchers(HttpMethod.PUT, "/api/flights/**").hasRole("FLIGHT_OWNER")
-				 * 
-				 * // USER can manage bookings and view their own details
-				 * .requestMatchers(HttpMethod.POST, "/api/bookings").hasRole("USER")
-				 * .requestMatchers(HttpMethod.GET, "/api/users/**").hasRole("USER")
-				 * .requestMatchers(HttpMethod.GET, "/api/bookings").hasRole("USER")
-				 * .requestMatchers(HttpMethod.DELETE, "/api/bookings/**").hasRole("USER")
-				 * 
-				 * // Any other /api/** endpoints require authentication (can restrict further
-				 * if needed) .requestMatchers("/api/**").authenticated()
-				 * 
-				 * // Any other requests must be authenticated .anyRequest().authenticated() )
-				 */
             .authorizeHttpRequests(auth -> auth
             	    // Public endpoints
             	    .requestMatchers(

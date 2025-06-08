@@ -7,6 +7,12 @@ import com.hexaware.simplyfly.enums.BookingStatus;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
+/**
+ * BookingDTO carries booking details with validation.
+ * @author Vikashini
+ * @version 1.0
+ */
+
 public class BookingDTO {
 
     private Long booking_id;

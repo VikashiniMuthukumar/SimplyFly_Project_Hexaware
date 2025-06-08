@@ -1,5 +1,14 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * REST controller for managing FlightOwner entities.
+ * Provides endpoints for CRUD operations.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

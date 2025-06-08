@@ -8,6 +8,14 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * Entity class for storing authenticated user details.
+ * Implements Spring Security's UserDetails interface to integrate with authentication system.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 @Data
 @Entity(name = "AuthUser")
 @Table(name = "auth_users")

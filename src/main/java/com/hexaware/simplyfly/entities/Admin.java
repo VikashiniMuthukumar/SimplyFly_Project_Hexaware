@@ -16,6 +16,12 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
+/**
+ * Entity class representing an Admin with a linked User.
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 @Entity
 @Table(name = "admin")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "admin_id")

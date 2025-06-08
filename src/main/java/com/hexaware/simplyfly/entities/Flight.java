@@ -18,6 +18,14 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
+/**
+ * Entity representing a Flight, including details like name, code, baggage limits,
+ * and associated routes and owner.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 @Entity
 @JsonIdentityInfo(
 		  generator = ObjectIdGenerators.PropertyGenerator.class,

@@ -1,5 +1,14 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * REST controller for managing User entities.
+ * Provides endpoints for user registration, update, deletion, and retrieval.
+ * Uses IUserService for business logic.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

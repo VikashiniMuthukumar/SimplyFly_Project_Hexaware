@@ -5,6 +5,12 @@ import com.hexaware.simplyfly.enums.UserRole;
 import jakarta.validation.constraints.*;
 import java.time.LocalDateTime;
 
+/**
+ * UserDTO is a data transfer object for user details with validation.
+ * @author Vikashini
+ * @version 1.0
+ */
+
 public class UserDTO {
 
     private Long user_id;

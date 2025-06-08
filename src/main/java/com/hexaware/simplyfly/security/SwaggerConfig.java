@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.security;
 
+/**
+ * SwaggerConfig configures OpenAPI with JWT Bearer authentication support.
+ * Sets API title and version, and defines security scheme for Swagger UI.
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
+
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

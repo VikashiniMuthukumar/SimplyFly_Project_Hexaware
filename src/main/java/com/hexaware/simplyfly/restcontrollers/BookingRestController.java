@@ -1,5 +1,13 @@
 package com.hexaware.simplyfly.restcontrollers;
 
+/**
+ * REST controller for managing bookings.
+ * Provides endpoints for CRUD operations on Booking entities.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

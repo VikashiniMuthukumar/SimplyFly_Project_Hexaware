@@ -1,5 +1,12 @@
 package com.hexaware.simplyfly.security;
 
+/**
+ * JwtUtil handles JWT creation, parsing, and validation.
+ * @author Vikashini
+ * @version 1.0
+ */
+
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

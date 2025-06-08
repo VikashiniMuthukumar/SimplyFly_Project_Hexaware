@@ -16,6 +16,13 @@ import jakarta.persistence.MapsId;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 
+/**
+ * Entity representing a Flight Owner who is linked to a User and can have multiple flights.
+ * 
+ * Author: Vikashini
+ * Version: 1.0
+ */
+
 @Entity
 public class FlightOwner {
     @Id
